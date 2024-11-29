@@ -1,0 +1,76 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestro Detalle de Solicitudes</title>
+</head>
+<body>
+    <h1> Lista de Solicitudes</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td><a href="#">1</a></td>
+            <td>2024-11-24</td>
+            <td>Aprobada</td>
+        </tr>
+        <tr>
+            <td><a href="#">2</a></td>
+            <td>2024-11-26</td>
+            <td>Pendiente</td>
+        </tr>
+        <tr>
+            <td><a href="#">3</a></td>
+            <td>2024-11-27</td>
+            <td>Rechazada</td>
+        </tr>
+    </table>
+    <h1> Detalle de Solicitudes</h1>
+    <form>
+        <div class="horizontal">
+            <label for="id_solicitud">Id Solicitud:</label><br>
+            <input type="number" id="id_solicitud" name="id_solicitud" value="1"><br>
+        </div>
+        <br>
+        <div class="horizontal">
+            <label for="fecha">Fecha:</label><br>
+            <input type="date" id="fecha" name="fecha" value="29/11/2024">
+        </div>
+        <br>
+        <div class="horizontal">
+            <label for="estado">Estado:</label><br>
+            <select name="estado">
+                <option name="pendiente">Pendiente</option>
+                <option name="aprobada">Aprobada</option>
+                <option name="rechazada">Rechazada</option>
+            </select>
+        </div>
+        <br>
+        <label for="descripcion"> Descripcion:</label>
+        <br>
+        <textArea id="descripcion" name="descripcion" rows="4" cols="50"> Descripcion de la solicitud 1</textArea>
+    </form>
+    <style>
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid;
+        }
+        .horizontal {
+            display: flex;
+            flex-direction: row;
+            margin: 5px auto;
+            gap: 10px;
+        }
+        .vertical {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</body>
+</html>
