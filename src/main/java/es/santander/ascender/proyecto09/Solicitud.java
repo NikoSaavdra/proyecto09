@@ -1,10 +1,16 @@
 package es.santander.ascender.proyecto09;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 public class Solicitud {
     private long id;
     private String nombre;
     private int edad;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
     public long getId() {
         return id;
     }
@@ -23,4 +29,8 @@ public class Solicitud {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main
